@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-checkbox": "/wxcomponents/vant/checkbox/index",
+    "van-card": "/wxcomponents/vant/card/index",
+    "van-stepper": "/wxcomponents/vant/stepper/index",
+    "van-submit-bar": "/wxcomponents/vant/submit-bar/index"
+  }
+}

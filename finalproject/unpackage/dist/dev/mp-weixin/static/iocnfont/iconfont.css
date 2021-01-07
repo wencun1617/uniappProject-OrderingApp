@@ -1,0 +1,24 @@
+@font-face {font-family: "iconfont";
+	src: url('@/static/font/iconfont.ttf')
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ldkzd:before {
+  content: "\e600";
+}
+
+.icon-dingweiweizhi:before {
+  content: "\e601";
+}
+
+.icon-fenxiang:before {
+  content: "\e64e";
+}
+

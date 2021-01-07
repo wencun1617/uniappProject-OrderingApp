@@ -1,0 +1,229 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页
+		{
+			"path": "pages/home/home",
+			"style": {
+				"app-plus": { //配置编译到 App 平台时的特定样式
+					"titleNView": {
+						"searchInput": {
+							"align": "left",
+							"placeholder": "搜索商家、商品名称",
+							"borderRadius": "50px",
+							"backgroundColor": "#ffffff",
+							"placeholderColor": "#95826d"
+						},
+						"buttons": [{
+								"text": "\ue601",
+								"fontSrc": "/static/iconfont/iconfont.ttf",
+								"float": "left",
+								"fontSize": "27px"
+							},
+							{
+								"text": "\ue604",
+								"fontSrc": "/static/iconfont/iconfont.ttf",
+								"float": "right",
+								"fontSize": "26px"
+							},
+							{
+								"text": "\ue600",
+								"fontSrc": "/static/iconfont/iconfont.ttf",
+								"float": "right",
+								"fontSize": "30px",
+								"color": "#EAC100"
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/category/category",
+			"style": {
+				"app-plus": { //配置编译到 App 平台时的特定样式
+					"titleNView": {
+						"searchInput": {
+							"align": "left",
+							"placeholder": "请输入搜索关键词",
+							"borderRadius": "50px",
+							"backgroundColor": "#ffffff",
+							"placeholderColor": "#95826d"
+						},
+						"buttons": [{
+							"text": "发现",
+							"float": "left",
+							"fontSize": "16px",
+							"width": "56px"
+						}]
+
+					}
+				}
+
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"usingComponents": {
+					"van-button": "/wxcomponents/vant/button/index",
+					"van-cell": "/wxcomponents/vant/cell/index",
+					"van-cell-group": "/wxcomponents/vant/cell-group/index"
+				},
+				"app-plus": {
+					"titleNView": {
+						"titleText": "饿了么",
+						"titleSize": "16px",
+						"backgroundColor": "#F1F1F1",
+						"buttons": [{
+							"text": "\ue609",
+							"fontSrc": "/static/iconfont/iconfont.ttf",
+							"float": "right",
+							"fontSize": "19px",
+							"width": "30px"
+						}, {
+							"text": "\ue68b",
+							"fontSrc": "/static/iconfont/iconfont.ttf",
+							"float": "right",
+							"fontSize": "20px",
+							"width": "30px"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/cart/cart",
+			"style": {
+				"usingComponents": {
+					"van-checkbox": "/wxcomponents/vant/checkbox/index",
+					"van-card": "/wxcomponents/vant/card/index",
+					"van-stepper": "/wxcomponents/vant/stepper/index",
+					"van-submit-bar": "/wxcomponents/vant/submit-bar/index"
+				},
+				"app-plus": {
+					"titleNView": {
+						"titleText": "订单",
+						"buttons": [{
+								"float": "left",
+								"fontSize": "22px",
+								"type": "back"
+							},
+							{
+								"text": "删除",
+								"float": "right",
+								"fontSize": "16px"
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/home/children/product-detail",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"titleText": "商品详情",
+						"buttons": [{
+							"text": "\ue6ad",
+							"fontSrc": "/static/iconfont/iconfont.ttf",
+							"fontSize": "23px",
+							"float": "right"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/location/location",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"titleText": "我的收货地址",
+						"titleSize": "16px",
+						"buttons": [{
+							"text": "地图",
+							"float": "right",
+							"fontSize": "16px",
+							"width": "56px"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/receive-address/receive-address",
+			"style": {
+				"usingComponents": {
+					"van-cell": "/wxcomponents/vant/cell/index"
+				},
+				"app-plus": {
+					"titleNView": {
+						"titleText": "添加或更改收货地址"
+					}
+				}
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"titleText": "登录",
+						"titleSize": "16px"
+					}
+				}
+			}
+		}, {
+			"path": "pages/reg/reg",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"titleText": "注册账号",
+						"titleSize": "16px"
+					}
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/pwd/pwd",
+            "style" : {
+				"app-plus": {
+					"titleNView": {
+						"titleText": "忘记密码"
+					}
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black", //导航栏标题颜色及状态栏前景颜色，black/white
+		"navigationBarTitleText": "uni-app", // 导航栏标题文字内容
+		"navigationBarBackgroundColor": "#BBFFFF", //导航栏背景颜色
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#7A7E83",
+		"borderStyle": "black",
+		"backgroundColor": "#BBFFFF",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/tabIcon/home_2.png",
+				"selectedIconPath": "static/tabIcon/home.png",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "static/tabIcon/category_2.png",
+				"selectedIconPath": "static/tabIcon/category.png",
+				"text": "发现"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/tabIcon/order_2.png",
+				"selectedIconPath": "static/tabIcon/order.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"iconPath": "static/tabIcon/me_2.png",
+				"selectedIconPath": "static/tabIcon/me.png",
+				"text": "我的"
+			}
+		]
+	}
+}
